@@ -6,7 +6,7 @@
 
 % AMIGO PE result to obtain the sensitivities at the optima
 caseStudy = 'B5';
-amigoResFile = 'B5/B5_nl2sol_6877';
+amigoResFile = 'B5/B5_pe_results';
 cytoscapeFolder = 'B5/cytoscape/';
 mkdir(cytoscapeFolder)
 
