@@ -11,9 +11,9 @@ cytoscapeFolder = 'B2/cytoscape/';
 mkdir(cytoscapeFolder)
 
 
-cramerRaoCorrFile = 'B2/B2_corrmat.pdf';
+cramerRaoCorrFile = 'B2/B2_corrmat';
 clusterCorrFlag = true;
-clusterredCorrFile= 'B2/B2_clustCorrmat.pdf';
+clusterredCorrFile= 'B2/B2_clustCorrmat';
 
 allLargestSubsetsFlag = false;
 
@@ -24,8 +24,8 @@ mkdir(costFuncPlotsFolder)
 kmax = 3;       % largest correlated group to be searched for
 Clim = 20;      % collinearity threshold for the groups
 
-sensitivity_bar_plot_file = 'B2/B2_sensitivity_bar.pdf'; 
-ci_threshold_idsubsetsize_plot_file = 'B2/B2_CI_idsubsetsize.pdf';
+sensitivity_bar_plot_file = 'B2/B2_sensitivity_bar'; 
+ci_threshold_idsubsetsize_plot_file = 'B2/B2_CI_idsubsetsize';
 
 myblue = [0.3010    0.7450    0.9330];
 myred = [0.8500    0.3250    0.0980];
@@ -62,7 +62,8 @@ xlabels = cellstr(ticklabels);
 set(gca,'XTick',1+0.5:1:length(variables)+0.5)
 set(gca,'xticklabel',xlabels,'xticklabelrotation',90)
 shg
-saveas(gca,cramerRaoCorrFile)
+saveas(gca,cramerRaoCorrFile,'fig')
+saveas(gca,cramerRaoCorrFile,'pdf')
 
 % cluster output
 if clusterCorrFlag
@@ -76,7 +77,8 @@ if clusterCorrFlag
     %set(gco2,'Linkage','complete','Dendrogram',3)
     colorbar
     h = plot(gco2);
-    saveas(h,clusterredCorrFile)
+    saveas(h,clusterredCorrFile,'pdf')
+    saveas(h,clusterredCorrFile,'fig')
 end
 
 %% see contourplots of the cost function vs 2 variables
@@ -92,6 +94,7 @@ if costcontourplots_FLAG
         a = gca;
         fname = regexprep(a.Title.String, '\s+', '_');
         saveas(gcf,[costFuncPlotsFolder fname '.pdf'])
+        saveas(gcf,[costFuncPlotsFolder fname '.fig'])
     end
     
     % arrange them in a subplot
@@ -152,7 +155,8 @@ title([caseStudy ' parameter sensitivity'])
 set(gca,'yscale','log','xtick',tickpos,'xticklabel',variables,'xticklabelrotation',90)
  xlim( [0.5 size(cnRjac,2)-0.5])
 %AMIGO_fig2publish(gcf,12)
-saveas(gca,sensitivity_bar_plot_file)
+saveas(gca,sensitivity_bar_plot_file,'fig')
+saveas(gca,sensitivity_bar_plot_file,'pdf')
 
 %% Identifiability
  
@@ -175,7 +179,8 @@ hold on
 line([Clim Clim],[1 npar],'LineStyle',':'  ,  'Color', myred, 'Linewidth',2 )
 
 shg
-saveas(gca,ci_threshold_idsubsetsize_plot_file)
+saveas(gca,ci_threshold_idsubsetsize_plot_file,'fig')
+saveas(gca,ci_threshold_idsubsetsize_plot_file,'pdf')
 
 
 %% compute all the largest subsets
