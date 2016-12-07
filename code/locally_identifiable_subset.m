@@ -58,14 +58,16 @@ end
 %% QR
 % initialize the sensitivity matrix with Rank-revealing QR factorization:
 if(isempty(which('rrqr.m')))
-    error('locally_identifiable_subset function requires the Rank-Revealing QR decomposition. rrqr() was not found in the MATLAB path.')
-end
-[Q,R,p,r] = rrqr(nS);
+    fprintf('locally_identifiable_subset function requires the Rank-Revealing QR decomposition, but rrqr() was not found in the MATLAB path. We use the QR decomposition of MATLAB.')
+    % MATLAB QR:
 
-% MATLAB QR:
-% [Q,R,E] = qr(nS);
-% t = 1:size(E,1);
-% p = t*E;
+   [Q,R,E] =  qr(nS);
+   t = 1:size(E,1);
+   p = t*E;
+else
+    [Q,R,p,r] = rrqr(nS);
+end
+
 % reorder the sensitivity matrix such that the first columns are preferred
 ranked_nS =nS(:,p);
 [~, invp] = sort(p);
