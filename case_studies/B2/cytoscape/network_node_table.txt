@@ -1,0 +1,149 @@
+name	type	
+cdhap	state	
+ce4p	state	
+cf6p	state	
+cfdp	state	
+cg1p	state	
+cg6p	state	
+cgap	state	
+cpep	state	
+cpg	state	
+cpg2	state	
+cpg3	state	
+cpgp	state	
+cpyr	state	
+crib5p	state	
+cribu5p	state	
+csed7p	state	
+cxyl5p	state	
+cglcex	state	
+kALDOdhap	id param	
+kALDOeq	non-id param	
+kALDOfdp	id param	
+kALDOgap	id param	
+kALDOgapinh	non-id param	
+KDAHPSe4p	non-id param	
+KDAHPSpep	id param	
+KENOeq	id param	
+KENOpep	id param	
+KENOpg2	id param	
+KG1PATatp	id param	
+KG1PATfdp	id param	
+KG1PATg1p	id param	
+KG3PDHdhap	id param	
+KG6PDHg6p	id param	
+KG6PDHnadp	non-id param	
+KG6PDHnadphg6pinh	id param	
+KG6PDHnadphnadpinh	id param	
+KGAPDHeq	id param	
+KGAPDHgap	non-id param	
+KGAPDHnad	non-id param	
+KGAPDHnadh	id param	
+KGAPDHpgp	non-id param	
+KPDHpyr	non-id param	
+KpepCxylasefdp	non-id param	
+KpepCxylasepep	non-id param	
+KPFKadpa	non-id param	
+KPFKadpb	non-id param	
+KPFKadpc	id param	
+KPFKampa	id param	
+KPFKampb	non-id param	
+KPFKatps	non-id param	
+KPFKf6ps	non-id param	
+KPFKpep	id param	
+KPGDHatpinh	id param	
+KPGDHnadp	non-id param	
+KPGDHnadphinh	id param	
+KPGDHpg	non-id param	
+KPGIeq	non-id param	
+KPGIf6p	id param	
+KPGIf6ppginh	id param	
+KPGIg6p	id param	
+KPGIg6ppginh	non-id param	
+KPGKadp	id param	
+KPGKatp	id param	
+KPGKeq	non-id param	
+KPGKpg3	non-id param	
+KPGKpgp	id param	
+KPGluMueq	non-id param	
+KPGluMupg2	id param	
+KPGluMupg3	id param	
+KPGMeq	id param	
+KPGMg1p	id param	
+KPGMg6p	id param	
+KPKadp	non-id param	
+KPKamp	id param	
+KPKatp	id param	
+KPKfdp	id param	
+KPKpep	id param	
+KPTSa1	non-id param	
+KPTSa2	id param	
+KPTSa3	id param	
+KPTSg6p	id param	
+KR5PIeq	id param	
+KRPPKrib5p	id param	
+KRu5Peq	non-id param	
+KSerSynthpg3	id param	
+KSynth1pep	id param	
+KSynth2pyr	id param	
+KTAeq	id param	
+kTISdhap	id param	
+kTISeq	non-id param	
+kTISgap	id param	
+KTKaeq	non-id param	
+KTKbeq	non-id param	
+LPFK	non-id param	
+LPK	id param	
+nDAHPSe4p	non-id param	
+nDAHPSpep	id param	
+nG1PATfdp	id param	
+nPDH	id param	
+npepCxylasefdp	id param	
+nPFK	non-id param	
+nPK	id param	
+nPTSg6p	non-id param	
+rmaxALDO	id param	
+rmaxDAHPS	non-id param	
+rmaxENO	id param	
+rmaxG1PAT	id param	
+rmaxG3PDH	id param	
+rmaxG6PDH	non-id param	
+rmaxGAPDH	id param	
+rmaxMetSynth	id param	
+rmaxMurSynth	id param	
+rmaxPDH	non-id param	
+rmaxpepCxylase	non-id param	
+rmaxPFK	non-id param	
+rmaxPGDH	non-id param	
+rmaxPGI	non-id param	
+rmaxPGK	non-id param	
+rmaxPGluMu	id param	
+rmaxPGM	id param	
+rmaxPK	non-id param	
+rmaxPTS	non-id param	
+rmaxR5PI	id param	
+rmaxRPPK	id param	
+rmaxRu5P	id param	
+rmaxSerSynth	non-id param	
+rmaxSynth1	non-id param	
+rmaxSynth2	id param	
+rmaxTA	id param	
+rmaxTIS	id param	
+rmaxTKa	id param	
+rmaxTKb	id param	
+rmaxTrpSynth	id param	
+VALDOblf	id param	
+cfeed	non-estim param	
+Dil	non-estim param	
+mu	non-estim param	
+cytosol	non-estim param	
+extracellular	non-estim param	
+cpep_obs	obs	
+cg6p_obs	obs	
+cpyr_obs	obs	
+cf6p_obs	obs	
+cglcex_obs	obs	
+cg1p_obs	obs	
+cpg_obs	obs	
+cfdp_obs	obs	
+cgap_obs	obs	
