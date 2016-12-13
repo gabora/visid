@@ -12,7 +12,7 @@
 %  Website: 
 % --------------------------------------------------------
 function pair_tripletCI2cytoscape(hcgrp2,hci2,hcgrp3,hci3,variables,fname)
-% write Cytoscape network file from thepair and triplet collinear parameters.
+% write Cytoscape network file from the pair and triplet collinear parameters.
  
 
 

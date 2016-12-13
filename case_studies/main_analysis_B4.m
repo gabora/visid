@@ -214,7 +214,7 @@ timer3 = tic();
 disp('time highCollinearityUptoKgroup:')
 toc(timer3)
 
-%export correlated groups using dummy nodes to cytoscape. Nothing can be seen on the figure. too crowded. 
+%export correlated groups using dummy nodes to cytoscape.
 higherCI2Cytoscape(hcgrps,hci,variables,[cytoscapeFolder 'hcgrps'])
 
 % export only pairwise correlation without dummy nodes
@@ -264,8 +264,7 @@ pair_tripletCI2cytoscape(hcgrps{2},hci{2},hcgrps{3},hci{3},variables,[cytoscapeF
 % disp('%**************** END **************************')
 
 
-%% export an identifiable/non-identifiable susbsets of parameters together
-% with the network
+%% export an identifiable/non-identifiable susbsets of parameters together with the network
 timer4 = tic();
 id_param = identifiable_subset2cytoscape(nRjac,variables,Clim, [cytoscapeFolder 'network']);
 disp('finding largest identifiable group')
