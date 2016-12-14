@@ -1,11 +1,11 @@
 Parameter	Identifiability	
 par1	non-id param	
 par2	non-id param	
-par3	non-id param	
+par3	id param	
 par4	non-id param	
 par5	non-id param	
 par6	id param	
-par7	id param	
+par7	non-id param	
 par8	non-id param	
 par9	non-id param	
 par10	non-id param	
@@ -21,13 +21,13 @@ par19	non-id param
 par20	non-id param	
 par21	non-id param	
 par22	id param	
-par23	non-id param	
+par23	id param	
 par24	non-id param	
 par25	non-id param	
 par26	non-id param	
 par27	non-id param	
 par28	non-id param	
-par29	non-id param	
+par29	id param	
 par30	non-id param	
 par31	non-id param	
 par32	non-id param	
@@ -37,7 +37,7 @@ par35	non-id param
 par36	non-id param	
 par37	non-id param	
 par38	non-id param	
-par39	id param	
+par39	non-id param	
 par40	non-id param	
 par41	non-id param	
 par42	non-id param	
@@ -57,7 +57,7 @@ par55	non-id param
 par56	non-id param	
 par57	non-id param	
 par58	non-id param	
-par59	non-id param	
+par59	id param	
 par60	non-id param	
 par61	non-id param	
 par62	non-id param	
@@ -66,8 +66,8 @@ par64	non-id param
 par65	non-id param	
 par66	non-id param	
 par67	non-id param	
-par68	id param	
-par69	non-id param	
+par68	non-id param	
+par69	id param	
 par70	non-id param	
 par71	non-id param	
 par72	non-id param	
@@ -75,7 +75,7 @@ par73	non-id param
 par74	non-id param	
 par75	non-id param	
 par76	non-id param	
-par77	id param	
+par77	non-id param	
 par78	non-id param	
 par79	non-id param	
 par80	non-id param	
@@ -95,7 +95,7 @@ par93	non-id param
 par94	non-id param	
 par95	id param	
 par96	non-id param	
-par97	id param	
+par97	non-id param	
 par98	non-id param	
 par99	non-id param	
 par100	non-id param	
