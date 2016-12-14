@@ -1,0 +1,56 @@
+name	type	
+TGFb	state	
+TGFbR	state	
+TGFb_TGFbR	state	
+TGFb_TGFbR_P	state	
+I_Smad_TGFb_TGFbR_P	state	
+Smad	state	
+Smad_P	state	
+CoSmad	state	
+Smad_P_Smad_P	state	
+Smad_P_CoSmad	state	
+Smad_N	state	
+Smad_P_Smad_P_N	state	
+Smad_P_N	state	
+Smad_P_CoSmad_N	state	
+CoSmad_N	state	
+I_Smad_mRNA1	state	
+I_Smad_mRNA2	state	
+I_Smad	state	
+k1	id param	
+k2	id param	
+k3	non-estim param	
+k4	id param	
+k5	id param	
+k6	id param	
+k7	id param	
+k8	non-id param	
+k9	id param	
+k10	id param	
+k11	id param	
+k12	id param	
+k13	id param	
+k14	non-id param	
+k15	id param	
+k16	non-id param	
+k17	id param	
+k18	id param	
+k19	non-id param	
+k20	non-estim param	
+k21	non-estim param	
+obsTGFb	obs	
+obsTGFbR	obs	
+obsTGFb_TGFbR	obs	
+obsTGFb_TGFbR_P	obs	
+obsI_Smad_TGFb_TGFbR_P	obs	
+obsSmad	obs	
+obsSmad_P	obs	
+obsCoSmad	obs	
+obsSmad_P_Smad_P	obs	
+obsSmad_P_CoSmad	obs	
+obsSmad_N	obs	
+obsSmad_P_Smad_P_N	obs	
+obsSmad_P_N	obs	
+obsSmad_P_CoSmad_N	obs	
+obsCoSmad_N	obs	
+I_Smad	obs	

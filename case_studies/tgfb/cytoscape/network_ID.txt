@@ -1,0 +1,19 @@
+Parameter	Identifiability	
+k1	id param	
+k2	id param	
+k4	id param	
+k5	id param	
+k6	id param	
+k7	id param	
+k8	non-id param	
+k9	id param	
+k10	id param	
+k11	id param	
+k12	id param	
+k13	id param	
+k14	non-id param	
+k15	id param	
+k16	non-id param	
+k17	id param	
+k18	id param	
+k19	non-id param	
