@@ -21,7 +21,8 @@ end
 
 % fill the inputs with the default values to avoid non-defined fields
 if(isempty(which('AMIGO_Structs_PE.m')))
-    error(' Network2Cytoscape function requires AMIGO2 Toolbox. AMIGO_Structs_PE() was not found in the MATLAB path.')
+    fprintf(2,' Network2Cytoscape function requires AMIGO2 Toolbox. AMIGO_Structs_PE() was not found in the MATLAB path.\n\n')
+    return
 end
 evalc('inputs = AMIGO_Structs_PE(inputs)');
 

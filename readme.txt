@@ -28,7 +28,7 @@ INSTRUCTIONS
 1. please, install required toolboxes
 2. install VisID using installVisID.m from the main directory: this will add visid to the MATLAB path.
 3. run case studies (main_analysis***.m) in the case_studies folder: this scripts load the parameter estimation results from the case-study related subfolders and conduct the identifiability analysis. It further produces network files in the  case_studies/#problemName#/cytoscape folder.
-4. import the networks from the case_studies/#problemName#/cytoscape folder to CytoScape. 
+4. import the networks from the case_studies/#problemName#/cytoscape folder to CytoScape. Please find further details in the case_studies/readme.txt
 
 
 

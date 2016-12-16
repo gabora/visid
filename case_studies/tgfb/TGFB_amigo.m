@@ -262,7 +262,7 @@ inputs.nlpsol.eSS.local.nl2sol.maxfeval=	150;
 % inputs.pathd
 %
 
-inputs.pathd.results_folder=	'Overfitting\TGFBeta';
+inputs.pathd.results_folder=	'TGFBeta';
 inputs.pathd.runident=	[];
 inputs.pathd.short_name=	'tgfbSP';
 
@@ -271,4 +271,4 @@ inputs.pathd.short_name=	'tgfbSP';
 % inputs.plotd
 %
 
-inputs.plotd.plotlevel=	'noplot';
+%inputs.plotd.plotlevel=	'noplot';
