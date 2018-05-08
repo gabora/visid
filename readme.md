@@ -3,8 +3,9 @@ MATLAB Toolbox
 author: Attila Gabor <gabor.attila87@gmail.com>
 
 
-paper describing the tool with examples:  
-Attila Gábor, Alejandro F. Villaverde, and Julio R. Banga. (2017) [Parameter identifiability analysis and visualization in large-scale kinetic models of biosystems.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5420165/) _BMC Syst Biol._ 2017; 11: 54.
+
+### paper describing the tool with examples:  
+-  Attila Gábor, Alejandro F. Villaverde, and Julio R. Banga. (2017) [Parameter identifiability analysis and visualization in large-scale kinetic models of biosystems.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5420165/) _BMC Syst Biol._ 2017; 11: 54.
 
 
 
@@ -35,6 +36,9 @@ The MATLAB scripts produce network files, which describe (1) the relationship am
 3. run case studies (main_analysis***.m) in the case_studies folder: this scripts load the parameter estimation results from the case-study related subfolders and conduct the identifiability analysis. It further produces network files in the  case_studies/#problemName#/cytoscape folder.
 4. import the networks from the case_studies/#problemName#/cytoscape folder to CytoScape. Please find further details in the case_studies/readme.txt
 
+
+## Issues, bugs and features
+Please use the [Issue page](https://github.com/gabora/visid/issues)  to report any problem or bug. 
 
 
 ## DISCLAIMER
