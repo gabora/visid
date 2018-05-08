@@ -34,6 +34,12 @@ mygreen = [0.4660    0.6740    0.1880];
 %% load input, preprocess
 load(amigoResFile)
 
+% tic
+% for i = 1:10
+% [~,~,Rjac] = AMIGO_getPEJac(results.fit.thetabest,inputs);
+% end
+% toc
+
 variables = cellstr(inputs.PEsol.id_global_theta);
 Rjac = results.fit.Rjac;
 npar = size(Rjac,2);

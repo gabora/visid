@@ -491,7 +491,6 @@ inputs.exps.noise_type  = 'homo_var';
 %==================================
 % UNKNOWNS RELATED DATA
 %==================================
-
 load b4_bounds.mat
 inputs.model.par = x0;
 

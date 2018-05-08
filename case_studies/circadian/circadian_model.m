@@ -135,8 +135,7 @@ inputs.exps.exp_y0=	{ 	[	           0            0            0            0    
 inputs.exps.n_exp=	2;
 inputs.exps.n_obs=	{ 	[	           2 ],
  [	           2 ]};
-inputs.exps.n_pulses=	{ 	[,
- [	           5 ]};
+inputs.exps.n_pulses=	{  [	           5 ]};
 inputs.exps.n_s=	{ 	[	          15 ],
  [	          25 ]};
 inputs.exps.noise_type=	'homo_var';
@@ -152,21 +151,19 @@ inputs.exps.obs_names=	{ 	char(	'Lum  ',...
  char(	'Lum  ',...
 	'mRNAa');
 };
-inputs.exps.t_con=	{ 	[	           0          120 ],
- [	           0           12           24           36           48           60           72           84           96          108          120 ]};
 inputs.exps.t_f=	{ 	[	         120 ],
  [	         120 ]};
-inputs.exps.u=	{ 	[	           1 ]};
-inputs.exps.u_interp=	{ 	char(	'sustained');
-,
- char(	'pulse-down');
-};
-inputs.exps.u_max=	{ 	[,
- [	           1 ]};
-inputs.exps.u_min=	{ 	[,
- [	           0 ]};
 
-
+ inputs.exps.u_interp{1}='sustained';                  %Stimuli definition for experiment 1:
+                                                       %OPTIONS:u_interp: 'sustained' |'step'|'linear'(default)|'pulse-up'|'pulse-down' 
+ inputs.exps.t_con{1}=[0 120];                         % Input swithching times: Initial and final time    
+ inputs.exps.u{1}=[1];                                 % Values of the inputs 
+ 
+ inputs.exps.u_interp{2}='pulse-down';                 %Stimuli definition for experiment 2
+ inputs.exps.n_pulses{2}=5;                            %Number of pulses |-|_|-|_|-|_|-|_|-|_    
+ inputs.exps.u_min{2}=0;inputs.exps.u_max{2}=1;        %Minimum and maximum value for the input
+ inputs.exps.t_con{2}=[0 :12: 120];                    %Times of switching: Initial time, Intermediate times, Final time
+                           
 %%
 % inputs.model
 %

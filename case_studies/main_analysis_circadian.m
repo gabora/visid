@@ -34,6 +34,13 @@ mygreen = [0.4660    0.6740    0.1880];
 
 %% load input, preprocess
 load(amigoResFile)
+%% compute the Jacobian for the CPU time
+% tic
+% for i = 1:100
+% [~,~,Rjac] = AMIGO_getPEJac(results.fit.thetabest,inputs);
+% end
+% toc
+%%
 
 variables = cellstr(inputs.PEsol.id_global_theta);
 Rjac = results.fit.Rjac;
