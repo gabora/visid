@@ -1,16 +1,18 @@
-function plot_sensBar(cnRjac,variables)
-myblue = [0.3010    0.7450    0.9330];
-myred = [0.8500    0.3250    0.0980];
-mygreen = [0.4660    0.6740    0.1880];
+function plot_sensBar(sensMat,varNames)
+% plot the sensitivities of each parameter using barplot.
+% Args:
+%   sensMat: sensitivity matrix, each column for a parameter
+%   varNames: cell vector, same length as number of columns in sensMat
 
+myblue = [0.3010    0.7450    0.9330];
 
 figure()
-tickpos = 1:size(cnRjac,2);
+tickpos = 1:size(sensMat,2);
 
-bar(tickpos,cnRjac,'Facecolor',myblue)
+bar(tickpos,sensMat,'Facecolor',myblue)
 ylabel('sensitivity norm')
 xlabel('parameters')
-title([caseStudy ' parameter sensitivity'])
-set(gca,'yscale','log','xtick',tickpos,'xticklabel',variables,'xticklabelrotation',90)
- xlim( [0.5 size(cnRjac,2)-0.5])
-%AMIGO_fig2publish(gcf,12)
+
+set(gca,'yscale','log','xtick',tickpos,'xticklabel',varNames,'xticklabelrotation',90)
+xlim( [0.5 size(sensMat,2)-0.5])
+
