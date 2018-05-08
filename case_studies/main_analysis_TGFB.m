@@ -34,6 +34,12 @@ timeComputation = false;
 
 %% load input, preprocess
 load(amigoResFile)
+% the existence of the following fields might generate error in some AMIGO versions, 
+% but it is not required for the identifiability analysis, therefore we
+% remove it. 
+inputs.exps = rmfield(inputs.exps,'stddeva');
+inputs.exps = rmfield(inputs.exps,'stddevb'); 
+
 %% compute the Jacobian for the CPU time
 if(timeComputation)
     tic

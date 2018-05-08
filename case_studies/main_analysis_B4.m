@@ -33,6 +33,12 @@ mygreen = [0.4660    0.6740    0.1880];
 
 %% load input, preprocess
 load(amigoResFile)
+% the existence of the following fields might generate error in some AMIGO versions, 
+% but it is not required for the identifiability analysis, therefore we
+% remove it. 
+inputs.exps = rmfield(inputs.exps,'stddeva');
+inputs.exps = rmfield(inputs.exps,'stddevb'); 
+
 % tic
 % for i = 1:10
 % [~,~,Rjac] = AMIGO_getPEJac(results.fit.thetabest,inputs);
