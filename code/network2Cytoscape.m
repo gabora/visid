@@ -20,11 +20,17 @@ if nargin <3
 end
 
 % fill the inputs with the default values to avoid non-defined fields
+
 if(isempty(which('AMIGO_Structs_PE.m')))
     fprintf(2,' Network2Cytoscape function requires AMIGO2 Toolbox. AMIGO_Structs_PE() was not found in the MATLAB path.\n\n')
     return
 end
-evalc('inputs = AMIGO_Structs_PE(inputs)');
+
+try
+    evalc('inputs = AMIGO_Structs_PE(inputs)');
+catch
+    
+end
 
 % compute symbolic expressions of the Jacobians:
 [stS,parS,algS,fsys,falg,dfdx,dfdp,dobsdx,dfdinp]=AMIGO_charmodel2syms(inputs,true,true,true,true);

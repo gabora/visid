@@ -30,14 +30,18 @@ myblue = [0.3010    0.7450    0.9330];
 myred = [0.8500    0.3250    0.0980];
 mygreen = [0.4660    0.6740    0.1880];
 
+timeComputation = false;
+
 %% load input, preprocess
 load(amigoResFile)
 %% compute the Jacobian for the CPU time
-tic
-for i = 1:100
-[~,~,Rjac] = AMIGO_getPEJac(results.fit.thetabest,inputs);
+if(timeComputation)
+    tic
+    for i = 1:100
+        [~,~,Rjac] = AMIGO_getPEJac(results.fit.thetabest,inputs);
+    end
+    elapsedTime_jacobian = toc/100;
 end
-toc
 %%
 
 variables = cellstr(inputs.PEsol.id_global_theta);
@@ -49,24 +53,11 @@ for i = 1:size(Rjac,2);
 end
 
 %% plot the cramer rao correlation matrix
+
 g_corr_mat = results.fit.g_corr_mat;
-corr_mat = zeros(size(g_corr_mat)+1);
-corr_mat(1:end-1,1:end-1)= g_corr_mat;
 
+plot_cramerRao(g_corr_mat,variables)
 
-figure
-pcolor(corr_mat)
-caxis([-1,1])
-
-colorbar
-colormap jet
-ticklabels = char(variables);
-set(gca,'YTick',1+0.5:1:length(variables)+0.5,'YTickLabel',ticklabels);
-set(gca,'xticklabel',[])
-ticksX = 1+0.5:1:length(variables)+0.5;
-xlabels = cellstr(ticklabels);
-set(gca,'XTick',1+0.5:1:length(variables)+0.5)
-set(gca,'xticklabel',xlabels,'xticklabelrotation',90)
 shg
 saveas(gca,cramerRaoCorrFile,'pdf')
 saveas(gca,cramerRaoCorrFile,'fig')
@@ -103,7 +94,7 @@ saveas(gca,ci_threshold_idsubsetsize_plot_file,'pdf')
 %% compute all the largest subsets
 if allLargestSubsetsFlag
     timer2=tic();
-    [largest_subsets largest_subsets_ci] = all_largest_subsets(nRjac,Clim);
+    [largest_subsets, largest_subsets_ci] = all_largest_subsets(nRjac,Clim);
     ngroups = size(largest_subsets_ci,1);
     
     
